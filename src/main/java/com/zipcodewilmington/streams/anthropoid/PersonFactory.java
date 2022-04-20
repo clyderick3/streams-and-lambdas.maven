@@ -58,7 +58,7 @@ public final class PersonFactory {
      * @return - Array of Person objects
      */ // TODO
     public Person[] createPersonArray(int arrayLength) {
-        return null;
+        return createPersonList(arrayLength).toArray(new Person[0]);
     }
 
 
@@ -69,6 +69,6 @@ public final class PersonFactory {
      * @return - Stream representation of collection of Person objects
      */ // TODO
     public Stream<Person> createPersonStream(int streamCount) {
-        return null;
+        return createPersonList(streamCount).stream();
     }
 }
